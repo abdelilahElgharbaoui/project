@@ -9,7 +9,11 @@
     "test": "jest",
     "init-db": "node scripts/init-db.js",
     "fix-passwords": "node scripts/fix-passwords.js",
-    "test-auth": "node scripts/test-auth.js"
+    "test-auth": "node scripts/test-auth.js",
+    "test-db": "node scripts/test-db.js",
+    "deploy": "npm start",
+    "docker:build": "docker build -t hospital-management-backend .",
+    "docker:run": "docker run -p 5000:5000 hospital-management-backend"
   },
   "keywords": [
     "hospital",

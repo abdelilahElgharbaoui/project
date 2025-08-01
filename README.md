@@ -78,6 +78,54 @@ Une plateforme complète de gestion hospitalière avec authentification JWT, bas
    ```
    L'application sera accessible sur `http://localhost:3000`
 
+## 🌐 Déploiement
+
+### Déploiement Rapide avec Docker
+
+1. **Prérequis**
+   - Docker et Docker Compose installés
+
+2. **Configuration**
+   ```bash
+   cp env.example .env
+   # Éditer .env avec vos valeurs de production
+   ```
+
+3. **Déploiement**
+   ```bash
+   # Linux/Mac
+   chmod +x deploy.sh
+   ./deploy.sh
+   
+   # Windows PowerShell
+   .\deploy.ps1
+   ```
+
+### Déploiement Manuel
+
+1. **Backend**
+   ```bash
+   cd backend
+   npm install --production
+   npm start
+   ```
+
+2. **Frontend**
+   ```bash
+   npm install
+   npm run build
+   npm start
+   ```
+
+### Plateformes Cloud
+
+- **Heroku**: Utilisez les buildpacks Node.js
+- **Railway**: Connectez votre repository GitHub
+- **Render**: Créez un nouveau Web Service
+- **Vercel**: Déployez le frontend Next.js
+
+Pour plus de détails, consultez le [Guide de Déploiement](DEPLOYMENT.md).
+
 ## 👤 Comptes de Démonstration
 
 ### Administrateur

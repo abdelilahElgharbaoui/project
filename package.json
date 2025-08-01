@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "npm run build && npm start",
+    "docker:build": "docker build -t hospital-management-frontend .",
+    "docker:run": "docker run -p 3000:3000 hospital-management-frontend"
   },
   "dependencies": {
     "next": "14.0.0",
