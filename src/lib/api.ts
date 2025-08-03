@@ -1,6 +1,6 @@
 // API service layer for connecting to the backend
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://3.88.252.96:5000/api';
 
 interface ApiResponse<T> {
   success: boolean;

@@ -107,7 +107,7 @@ export default function RoomManagement({ userRole }: RoomManagementProps) {
 
   const fetchRoomSchedule = async (roomId: string, date: string) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/reservations/room/${roomId}/schedule?date=${date}`);
+      const response = await fetch(`http://3.88.252.96:5000/api/reservations/room/${roomId}/schedule?date=${date}`);
       const data = await response.json();
       if (data.success) {
         setRoomSchedule(data.data.schedule);
